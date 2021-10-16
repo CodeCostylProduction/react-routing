@@ -2,6 +2,7 @@ import React, {Component} from 'react'
 import './App.scss'
 import About from './About/About'
 import Cars from './Cars/Cars'
+import {Route} from "react-router-dom";
 
 class App extends Component {
   render() {
@@ -20,8 +21,8 @@ class App extends Component {
         </nav>
 
         <hr/>
+        <Route path="/" exact render={() => <h1>Home page</h1>}/>
         <About />
-
         <Cars />
       </div>
     );

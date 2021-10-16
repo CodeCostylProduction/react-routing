@@ -12,13 +12,26 @@ class App extends Component {
         <nav className="nav">
           <ul>
             <li>
-              <NavLink to="/">Home</NavLink>
+              <NavLink
+                  to="/"
+                  exact
+                  activeClassName={'wfm-active'}
+              >Home</NavLink>
             </li>
             <li>
-              <NavLink to="/about">About</NavLink>
+              <NavLink
+                  to="/about"
+                  activeStyle={{
+                      color: 'blue'
+                  }}
+              >About</NavLink>
             </li>
             <li>
-              <NavLink to="/Cars">Cars</NavLink>
+              <NavLink to={{
+                  pathname: '/Cars',
+                  search: '?a=2&b=3',
+                  hash: 'wfm-hash'
+              }}>Cars</NavLink>
             </li>
 
           </ul>

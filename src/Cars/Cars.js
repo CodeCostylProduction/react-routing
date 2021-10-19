@@ -14,7 +14,6 @@ export default class Cars extends Component {
       pathname: '/'
     })
   }
-
   render() {
     return (
       <div style={{
@@ -23,7 +22,7 @@ export default class Cars extends Component {
         paddingTop: '20px',
         textAlign: 'center'
       }}>
-        <button onClick={this.goToHomePage}>Go to home Page</button>
+        <button onClick={this.goToHomePage}>Go to  home Page</button>
         <hr/>
         {this.state.cars.map((car, index) => {
           return (

@@ -40,7 +40,7 @@ class App extends Component {
         <hr/>
         <Route path="/" exact render={() => <h1>Home page</h1>}/>
         <Route path="/about" exact component={About}/>
-        <Route path="/Cars" exact component={Cars}/>
+        <Route path="/Cars" component={Cars}/>
 
         {/*<About />*/}
         {/*<Cars />*/}
